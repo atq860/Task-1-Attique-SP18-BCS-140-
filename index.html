@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="jquery-3.5.1.min.js" charset="utf-8"></script>
+  <script src="scripts.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="myStyles.css">
+  <title>Task 1</title>
+</head>
+
+<body>
+
+  <!-- ___________________________ Form _________________________ -->
+  <div class="form">
+    <h2 id = "fh2">Add/Update Person Form</h2>
+    <form>
+      <label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="text" name="name" id="name">
+      <br><br>
+
+      <!-- Radio button for male Female -->
+      <label for="sex">Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+      </label>
+      <input type="radio" class="sex" name="sex" value="Male">
+      <label for="female">Male</label>
+
+      <input type="radio" class="sex" name="sex" value="Female">
+      <label for="female">Female</label><br><br>
+
+      <label for="age">Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="text" id="age" name="age">
+      <br>
+      <br>
+
+      <label for="city">City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <select style="width: 165px;" id="city" name="city">
+        <option value="Lahore">Lahore</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Islamabad">Islamabad</option>
+        <option value="Chistian">Chistian</option>
+        <option value="Faisalabad">Faisalabad</option>
+        <option value="Multan">Multan</option>
+        <option value="Rawalpindi">Rawalpindi</option>
+        <option value="Sialkot">Sialkot</option>
+      </select>
+      <br><br>
+
+      <!-- _________________________Buttons _________________________ -->
+      <div class="Buttons">
+        <input type="button" name="Reset" value="Reset" id="resetBtn">
+        <input type="button" name="Add" value="Add" id="addBtn">
+        <input type="button" name="Update" value="Update" id="updateBtn">
+      </div>
+
+    </form>
+  </div>
+
+  <!-- ___________________________ Table _________________________ -->
+  <h2 id = "th2">List of Person</h2>
+  <div class="Table">
+    <table id="pTable">
+      <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>City</th>
+        <th id="action">Action</th>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
